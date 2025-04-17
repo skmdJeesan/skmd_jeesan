@@ -1,0 +1,37 @@
+2025-04-15 11:31:41,078 - drone_simulator.client - INFO [client.py:321] - Starting Drone Client with server URI: ws://localhost:8765
+2025-04-15 11:31:41,079 - drone_simulator.client - INFO [client.py:24] - Drone client initialized with server URI: ws://localhost:8765
+2025-04-15 11:31:41,081 - drone_simulator.client - INFO [client.py:28] - Attempting to connect to ws://localhost:8765
+2025-04-15 11:31:45,366 - drone_simulator.client - ERROR [client.py:65] - Connection refused. Is the server running at ws://localhost:8765?
+2025-04-15 11:31:45,366 - drone_simulator.client - INFO [client.py:79] - Session summary - Duration: 4.3s, Commands sent: 0, Connection ID: None
+2025-04-15 11:49:04,112 - drone_simulator.client - INFO [client.py:321] - Starting Drone Client with server URI: ws://localhost:8765
+2025-04-15 11:49:04,176 - drone_simulator.client - INFO [client.py:24] - Drone client initialized with server URI: ws://localhost:8765
+2025-04-15 11:49:04,181 - drone_simulator.client - INFO [client.py:28] - Attempting to connect to ws://localhost:8765
+2025-04-15 11:49:08,395 - drone_simulator.client - ERROR [client.py:65] - Connection refused. Is the server running at ws://localhost:8765?
+2025-04-15 11:49:08,397 - drone_simulator.client - INFO [client.py:79] - Session summary - Duration: 4.2s, Commands sent: 0, Connection ID: None
+2025-04-17 10:28:46,939 - drone_simulator.client - INFO [client.py:321] - Starting Drone Client with server URI: ws://localhost:8765
+2025-04-17 10:28:46,942 - drone_simulator.client - INFO [client.py:24] - Drone client initialized with server URI: ws://localhost:8765
+2025-04-17 10:28:46,945 - drone_simulator.client - INFO [client.py:28] - Attempting to connect to ws://localhost:8765
+2025-04-17 10:28:51,396 - drone_simulator.client - ERROR [client.py:65] - Connection refused. Is the server running at ws://localhost:8765?
+2025-04-17 10:28:51,398 - drone_simulator.client - INFO [client.py:79] - Session summary - Duration: 4.5s, Commands sent: 0, Connection ID: None
+2025-04-17 10:48:16,814 - drone_simulator.client - INFO [client.py:22] - Drone client initialized with server URI: ws://localhost:8765
+2025-04-17 10:48:16,814 - drone_simulator.client - INFO [client.py:26] - Attempting to connect to ws://localhost:8765
+2025-04-17 10:48:16,991 - drone_simulator.client - ERROR [client.py:48] - Connection error: received 1011 (internal error); then sent 1011 (internal error)
+Traceback (most recent call last):
+  File "c:\Users\JEESAN\Desktop\Drone Simulation\Software_R2\drone_simulator\client.py", line 38, in connect
+    response = await websocket.recv()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JEESAN\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error); then sent 1011 (internal error)
+2025-04-17 10:48:16,995 - drone_simulator.client - INFO [client.py:53] - Session summary: Duration=0.2s, Commands=0, ID=None
+2025-04-17 11:05:47,676 - drone_simulator.client - INFO [client.py:22] - Drone client initialized with server URI: ws://localhost:8765
+2025-04-17 11:05:47,684 - drone_simulator.client - INFO [client.py:26] - Attempting to connect to ws://localhost:8765
+2025-04-17 11:05:47,846 - drone_simulator.client - ERROR [client.py:48] - Connection error: received 1011 (internal error); then sent 1011 (internal error)
+Traceback (most recent call last):
+  File "c:\Users\JEESAN\Desktop\Drone Simulation\Software_R2\drone_simulator\client.py", line 38, in connect
+    response = await websocket.recv()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JEESAN\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error); then sent 1011 (internal error)
+2025-04-17 11:05:47,851 - drone_simulator.client - INFO [client.py:53] - Session summary: Duration=0.2s, Commands=0, ID=None

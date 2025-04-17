@@ -1,0 +1,30 @@
+2025-04-17 11:13:25,702 - drone_simulator.optimized_client - INFO [client.py:147] - Starting Optimized Drone Client with server URI: ws://localhost:8765
+2025-04-17 11:13:25,706 - drone_simulator.optimized_client - INFO [client.py:24] - Optimized drone client initialized with server URI: ws://localhost:8765
+2025-04-17 11:13:25,706 - drone_simulator.optimized_client - INFO [client.py:28] - Attempting optimized connection to ws://localhost:8765
+2025-04-17 11:13:25,918 - drone_simulator.optimized_client - ERROR [client.py:46] - Connection error: received 1011 (internal error); then sent 1011 (internal error)
+Traceback (most recent call last):
+  File "c:\Users\JEESAN\Desktop\Drone Simulation\Software_R2\drone_simulator\client.py", line 37, in connect
+    response = await websocket.recv()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JEESAN\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error); then sent 1011 (internal error)
+2025-04-17 11:13:25,924 - drone_simulator.optimized_client - ERROR [client.py:155] - Client error: received 1011 (internal error); then sent 1011 (internal error)
+Traceback (most recent call last):
+  File "c:\Users\JEESAN\Desktop\Drone Simulation\Software_R2\drone_simulator\client.py", line 150, in main
+    asyncio.run(client.connect())
+  File "C:\Users\JEESAN\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\JEESAN\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JEESAN\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\JEESAN\Desktop\Drone Simulation\Software_R2\drone_simulator\client.py", line 37, in connect
+    response = await websocket.recv()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JEESAN\AppData\Local\Programs\Python\Python312\Lib\site-packages\websockets\asyncio\connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: received 1011 (internal error); then sent 1011 (internal error)
